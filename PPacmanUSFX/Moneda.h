@@ -27,7 +27,6 @@ public:
     PoderMoneda getTipoPoderMoneda() { return tipoPoderMoneda; }
     int getTiempoPoderMoneda() { return tiempoPoderMoneda; }
    
-    void setValor(int _valor) { valor = _valor; }
     void setTipoPoderMoneda(PoderMoneda _poderMoneda) { tipoPoderMoneda = _poderMoneda; }
     void setTiempoPoderMoneda(int _tiempoPoderMoneda) { tiempoPoderMoneda = _tiempoPoderMoneda; }
     void setTileActual(Tile* _tileNuevo);

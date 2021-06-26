@@ -32,9 +32,6 @@ public:
 
 	array<Tile*, 4> GetNeighbours(Tile* _tile);
 	Pacman* getPacman();
-
-	int getAncho() { return anchoPantalla; }
-	int getAlto() { return altoPantalla; }
 };
 
 

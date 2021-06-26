@@ -50,10 +50,6 @@ public:
 	void setTileActual(Tile* _tileNuevo) {};
 
 	// Metodos varios
-
-	// Manejador de eventos de la fruta
-	//void handleEvent(SDL_Event& e);
-
 	// Mostrar u ocultar la fruta
 	void update() {};
 	// Renderizar imagen fruta

@@ -2,6 +2,7 @@
 
 TileGraph* GameActor::tileGraph = nullptr;
 
+
 GameActor::GameActor():GameObject()
 {
 	posicionX = 0;
@@ -169,23 +170,10 @@ bool GameActor::tratarDeMover(MoveDirection _direccionNueva)
 		break;
 	}
 
-	// Si el tile destino es nullptr, pasara al otro lado
+	// Si el tile destino es nullptr, no se puede avanzar ahi
 	if (tileDestino == nullptr) {
-		switch (_direccionNueva)
-		{
-		case MOVE_UP:
-			tileDestino = tileGraph->getTileEn(tileActual->getPosicionX(), tileActual->getPosicionY() + tileGraph->getAlto() - 1);
-			break;
-		case MOVE_DOWN:
-			tileDestino = tileGraph->getTileEn(tileActual->getPosicionX(), tileActual->getPosicionY() - tileGraph->getAlto() + 1);
-			break;
-		case MOVE_LEFT:
-			tileDestino = tileGraph->getTileEn(tileActual->getPosicionX() + tileGraph->getAncho() - 2, tileActual->getPosicionY());
-			break;
-		case MOVE_RIGHT:
-			tileDestino = tileGraph->getTileEn(tileActual->getPosicionX() - tileGraph->getAncho() + 2, tileActual->getPosicionY());
-			break;
-		}
+		setTileSiguiente(nullptr);
+		return false;
 	}
 	// Si el tile destino es una pared, no se puede avanzar ahi
 	if (tileDestino->getPared() != nullptr) {
