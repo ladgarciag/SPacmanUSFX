@@ -114,18 +114,18 @@ void Pacman::update()
 
 	if (tileActual == nullptr) {
 
-		if (tileActual->getPosicionX() <= TileGraph::anchoTileGraph )
+		if (tileActual->getPosicionX() <= TileGraph::anchoTileGraph +1 )
 		{
-			Tile* newTile = tileGraph->getTileEn(0, tileActual->getPosicionY());
+			Tile* newTile = tileGraph->getTileEn(+1, tileActual->getPosicionY());
 			setTileActual(newTile);
 		}
-		else if (tileActual->getPosicionX() >= 0) {
+		else if (tileActual->getPosicionX() >= +1) {
 			Tile* newTile = tileGraph->getTileEn(TileGraph::anchoTileGraph, tileActual->getPosicionY());
 			setTileActual(newTile);
 		}
 		else if (tileActual->getPosicionY() >= TileGraph::altoTileGraph)
 		{
-			Tile* newTile = tileGraph->getTileEn(tileActual->getPosicionX(), 0);
+			Tile* newTile = tileGraph->getTileEn(tileActual->getPosicionX(), -1);
 			setTileActual(newTile);
 		}
 		else if (tileActual->getPosicionY() <= 0) {

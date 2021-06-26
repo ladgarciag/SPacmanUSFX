@@ -21,15 +21,15 @@ private:
 	const string pathParedClasico = "Resources/wall.bmp";
 	const string pathParedClasicoAdapter = "Resources/wall_sprite.bmp";
 
-	const string pathPacmanGalactico = "Resources/PacMan.bmp";
-	const string pathFantasmaGalactico1 = "Resources/fantasmaamarillo.bmp ";
-	const string pathFantasmaGalactico2 = "Resources/azul.png ";
-	const string pathFantasmaGalactico3 = "Resources/fantasma.png ";
-	const string pathFantasmaGalactico4 = "Resources/fantasmarojo.bmp ";
-	const string pathFrutaGalactico = "Resources/espacial2.png";
-	const string pathMonedaGalactico = "Resources/monedagalactico1.png";
-	const string pathSuperMonedaGalactico = "Resources/Monedas03.jpg";
-	const string pathParedGalactico = "Resources/WallTextures.png";
+	//const string pathPacmanGalactico = "Resources/PacMan.bmp";
+	//const string pathFantasmaGalactico1 = "Resources/fantasmaamarillo.bmp ";
+	//const string pathFantasmaGalactico2 = "Resources/azul.png ";
+	//const string pathFantasmaGalactico3 = "Resources/fantasma.png ";
+	//const string pathFantasmaGalactico4 = "Resources/fantasmarojo.bmp ";
+	//const string pathFrutaGalactico = "Resources/espacial2.png";
+	//const string pathMonedaGalactico = "Resources/monedagalactico1.png";
+	//const string pathSuperMonedaGalactico = "Resources/Monedas03.jpg";
+	//const string pathParedGalactico = "Resources/WallTextures.png";
 
 	Texture* pacmanClasicoTexture;
 	Texture* fantasmaClasico1Texture;
@@ -42,15 +42,15 @@ private:
 	Texture* paredClasicoTexture;
 	Texture* paredClasicoAdapterTexture;
 
-	Texture* pacmanGalacticoTexture;
-	Texture* fantasmaGalactico1Texture;
-	Texture* fantasmaGalactico2Texture;
-	Texture* fantasmaGalactico3Texture;
-	Texture* fantasmaGalactico4Texture;
-	Texture* frutaGalacticoTexture;
-	Texture* monedaGalacticoTexture;
-	Texture* superMonedaGalacticoTexture;
-	Texture* paredGalacticoTexture;
+	//Texture* pacmanGalacticoTexture;
+	//Texture* fantasmaGalactico1Texture;
+	//Texture* fantasmaGalactico2Texture;
+	//Texture* fantasmaGalactico3Texture;
+	//Texture* fantasmaGalactico4Texture;
+	//Texture* frutaGalacticoTexture;
+	//Texture* monedaGalacticoTexture;
+	//Texture* superMonedaGalacticoTexture;
+	//Texture* paredGalacticoTexture;
 	
 	AnimationFrames* framesAnimacionPacmanClasico;
 	AnimationFrames* framesAnimacionFantasmaClasico;
