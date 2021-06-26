@@ -22,7 +22,7 @@ Pacman::Pacman(Tile* _tile, Texture* _textura) :GamePawn(_textura)
 	colisionador->w = ancho;
 	colisionador->h = alto;
 
-	velocidad = 5;
+	velocidad = 4;
 	movil = true;
 	enMovimiento = false;
 	direccionActual = MOVE_STILL;

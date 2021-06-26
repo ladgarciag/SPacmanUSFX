@@ -75,7 +75,7 @@ bool MapGenerator::load(string path)
 				objetoNuevo = new Fantasma(tileNuevo, textureManager->getTextura("fantasma_clasico1"));
 				((GameActor*)objetoNuevo)->setFramesAnimacion(textureManager->getFramesAnimacion("fantasma_clasico"));
 				((GameActor*)objetoNuevo)->setFramesDireccion(2);
-				((GameActor*)objetoNuevo)->setVelocidad(3);
+				((GameActor*)objetoNuevo)->setVelocidad(2);
 
 				/*
 				objetoNuevo = FantasmasFactory::getTipoClasicoBlinky();
@@ -101,19 +101,23 @@ bool MapGenerator::load(string path)
 			case 'b':
 				objetoNuevo = new Fantasma(tileNuevo, textureManager->getTextura("fantasma_clasico2"));
 				((GameActor*)objetoNuevo)->setFramesAnimacion(textureManager->getFramesAnimacion("fantasma_clasico"));
-				((GameActor*)objetoNuevo)->setFramesDireccion(3);
+				((GameActor*)objetoNuevo)->setFramesDireccion(4);
 				((GameActor*)objetoNuevo)->setVelocidad(2);
 
 				/*objetoNuevo = factory->createFantasmaInstance(tileNuevo, textureManager, x * 25, y * 25, 2);
 				objetoNuevo->setFramesDireccion(4);*/
 				break;
 			case 'c':
-				/*objetoNuevo = factory->createFantasmaInstance(tileNuevo, textureManager, x * 25, y * 25, 2);
-				objetoNuevo->setFramesDireccion(4);*/
+				objetoNuevo = new Fantasma(tileNuevo, textureManager->getTextura("fantasma_clasico3"));
+				((GameActor*)objetoNuevo)->setFramesAnimacion(textureManager->getFramesAnimacion("fantasma_clasico"));
+				((GameActor*)objetoNuevo)->setFramesDireccion(5);
+				((GameActor*)objetoNuevo)->setVelocidad(2);
 				break;
 			case 'd':
-				/*objetoNuevo = factory->createFantasmaInstance(tileNuevo, textureManager, x * 25, y * 25, 3);
-				objetoNuevo->setFramesDireccion(4);*/
+				objetoNuevo = new Fantasma(tileNuevo, textureManager->getTextura("fantasma_clasico4"));
+				((GameActor*)objetoNuevo)->setFramesAnimacion(textureManager->getFramesAnimacion("fantasma_clasico"));
+				((GameActor*)objetoNuevo)->setFramesDireccion(6);
+				((GameActor*)objetoNuevo)->setVelocidad(2);
 				break;
 			}
 
